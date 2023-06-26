@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Work+Sans:wght@700&display=swap');
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: grey;
+}
+
+p {
+  text-align: justify;
+}
+
+.footer {
+  background: linear-gradient(to bottom, #500202, #000000);
+  color: white;
+  height: 6vh;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  overflow: hidden;
+}
+
+.footer p {
+  margin-bottom: 0;
+  color: white;
+}
+
+.social-icon {
+  color: white;
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.glava {
+  background: linear-gradient(to bottom, #500202, #000000);
+}
+
+
+#reviews {
+  background-color: #grey;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.review {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.review h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.review p {
+  line-height: 1.6;
+}
+
+.review img {
+  width: auto;
+  max-width: 25vw;
+  height: 20vh;
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu {
+  background: linear-gradient(to bottom, #500202, #d43811);
+}
+
+.dropdown-item {
+  color: white;
+}

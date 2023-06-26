@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Work+Sans:wght@700&display=swap');
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: lightgrey;
+}
+
+section {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: justify;
+  background-color: lightgray;
+}
+
+.footer {
+  background: linear-gradient(to bottom, #500202, #000000);
+  color: white;
+  height: 6vh;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  overflow: hidden;
+  margin-top: auto;
+}
+
+.footer p {
+  margin-bottom: 0;
+  color: white;
+}
+
+.social-icon {
+  color: white;
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.glava {
+  background: linear-gradient(to bottom, #500202, #000000);
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: justify;
+  background-color: lightgray;
+}
+
+th {
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.paragraphs-wrapper {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.paragraphs-wrapper p {
+  margin-bottom: 50px;
+  line-height: 1.5;
+  color: rgb(0, 0, 0);
+}
+
+.paragraphs-wrapper .col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 10px;
+}
+
+.dropdown-menu {
+  background: linear-gradient(to bottom, #500202, #d43811);
+}
+
+.dropdown-item {
+  color: white;
+}

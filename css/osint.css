@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Work+Sans:wght@700&display=swap');
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: lightgrey;
+}
+
+
+
+.footer {
+  background: linear-gradient(to bottom, #500202, #000000);
+  color: white;
+  height: 6vh;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  overflow: hidden;
+  margin-top: auto;
+}
+
+.footer p {
+  margin-bottom: 0;
+  color: white;
+}
+
+.social-icon {
+  color: white;
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.glava {
+  background: linear-gradient(to bottom, #500202, #000000);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+
+p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.storitev {
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#metodologija {
+  background-color: #f5f5f5;
+}
+
+#prilagajanje {
+  background-color: #e0e0e0;
+}
+
+#ekipa {
+  background-color: #f5f5f5;
+}
+
+#primeri {
+  background-color: #e0e0e0;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+#metodologija h2 {
+  color: #28a745;
+}
+
+#prilagajanje h2 {
+  color: #dc3545;
+}
+
+#ekipa h2 {
+  color: #ffc107;
+}
+
+#primeri h2 {
+  color: #6c757d;
+}
+
+#ekipa img {
+  max-width: 850px;
+}
+
+.dropdown-menu {
+  background: linear-gradient(to bottom, #500202, #d43811);
+}
+
+.dropdown-item {
+  color: white;
+}
+
+div {
+  text-align: justify;
+}
+
+.center {
+  text-align: center;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="spletišče, website, cybersecurity, spletno mesto, Bootstrap">
+  <meta name="description" content="lastna spletna stran">
+  <meta name="author" content="Prezelj Maj">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Protection</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/kontakt.css">
+  <link rel="icon" href="slike/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark glava">
+    <a class="navbar-brand" href="index.html">
+      <img src="slike/logo.png" alt="logo" height="60">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="bigTech.html">
+            Big Tech
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="osint.html">
+            OSINT
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="subpageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Vsakdanja zasebnost
+          </a>
+          <div class="dropdown-menu" aria-labelledby="subpageDropdown">
+            <a class="dropdown-item" href="os.html">
+              Operacijski sistemi
+            </a>
+            <a class="dropdown-item" href="izdelki.html">
+              Izdelki
+            </a>
+            <a class="dropdown-item" href="ZIS.html">
+              Zasebnost in zaščita
+            </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="novice.html">
+            Novice
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontakt.html">
+            Kontakt
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <h1>Kontaktirajte nas</h1>
+
+  <div class="container contact-form">
+    <div class="row">
+      <div class="col-md-6">
+        <form>
+          <div class="form-group">
+            <label for="name">Ime *</label>
+            <input type="text" id="name" name="name" required placeholder="Ime">
+          </div>
+          <div class="form-group">
+            <label for="surname">Priimek *</label>
+            <input type="text" id="surname" name="surname" required placeholder="Priimek">
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required placeholder="imepriimek@gmail.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Tel. št.</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-789">
+          </div>
+          <div class="form-group">
+            <label for="message">Sporočilo *</label>
+            <textarea id="message" name="message" required placeholder="Zadeva..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="background-color: red; border: none;">Pošlji</button>
+        </form>
+      </div>
+      <div class="col-md-6 map-container">
+        <iframe id="map" src="mapa.html" title="Iframe Example"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer bg-dark text-white">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="https://www.wired.com/story/ways-facebook-tracks-you-limit-it/"><i class="fab fa-facebook-f social-icon"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.cbsnews.com/news/5-ways-twitter-can-ruin-your-career/"><i class="fab fa-twitter social-icon"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://privacy.commonsense.org/privacy-report/instagram"><i class="fab fa-instagram social-icon"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <p style="padding-left: 75vw;">&copy; 2023 PMPP. &nbsp; All rights reserved.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+    var map = L.map('map').setView([46.43727185851124, 14.050303654229618], 18);
+
+    L.marker([46.43727185851124, 14.050303654229618]).addTo(map)
+      .bindPopup('Cesta Maršala Tita 41, Jesenice 4270')
+      .openPopup();
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 20,
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Work+Sans:wght@700&display=swap');
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: grey;
+}
+
+section {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.footer {
+  background: linear-gradient(to bottom, #500202, #000000);
+  color: white;
+  height: 6vh;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  overflow: hidden;
+  margin-top: auto;
+}
+
+.footer p {
+  margin-bottom: 0;
+  color: white;
+}
+
+.social-icon {
+  color: white;
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+ul {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.glava {
+  background: linear-gradient(to bottom, #500202, #000000);
+}
+
+h1, h2 {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.privacy-section {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-box {
+  background-color: lightgrey;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.privacy-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.privacy-table th,
+.privacy-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.privacy-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.dropdown-menu {
+  background: linear-gradient(to bottom, #500202, #d43811);
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.center {
+  text-align: center;
+}
